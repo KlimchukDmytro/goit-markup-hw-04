@@ -43,6 +43,7 @@ img {
 /* -------------HEDER -------------*/
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -91,6 +92,10 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-menu-link-box{
+    color: #404bbf;
+}
+
 .header-menu-link.header-menu-link-box:after{
     content: "";
     width: 100%;
@@ -100,6 +105,7 @@ img {
     border-radius: 2px;
     bottom: 0;
     left: 0;
+    bottom: -1px;
 }
 
 .header-menu-link:hover,
@@ -143,6 +149,7 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------- section one-------------- */
@@ -150,7 +157,7 @@ img {
 .section-solutions {
     background: #2E2F42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -190,6 +197,7 @@ img {
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -331,25 +339,26 @@ img {
 
 .team-item-icon{
     width: 40px;
-    height: 40px;
+    height: 40px;  
+}
+
+.team-link-icon {
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-item-icon:hover{
+.team-link-icon:hover,
+.team-link-icon:focus {
     background-color: #404bbf;
 }
-.team-link-icon {
-  
-}
 
-.team-icon{
+.team-wrap{
     fill: #f4f4fd;
 }
 
@@ -380,6 +389,10 @@ img {
 
 .portfolio-item:hover .portfolio-cover-text{
     transform: translateY(0);
+}
+
+.portfolio-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-cover-wrap{
@@ -506,6 +519,6 @@ img {
     background-color: #31d0aa;
 }
 
-.footer-wrap{
+.footer-icon{
     fill: #f4f4fd;
 }
